@@ -1,0 +1,40 @@
+<!-- Navbar -->
+<app-nav-bar></app-nav-bar>
+<div>
+    <form>
+        <div class="inputDiv">
+            <label class="inputLabel" for="name">Name</label>
+            <input [(ngModel)]="name" type="text" id="name" name="userName">
+        </div>
+
+        <!-- <div class="inputDiv form-group">
+            <label class="inputLabel" for="mail">E-mail</label>
+            <input [(ngModel)]="email" class="form-control" type="email" id="email" ngModel email name="userEmail">
+        </div> -->
+
+        <div class="inputDiv">
+            <label class="inputLabel" for="mail">E-mail</label>
+            <input [(ngModel)]="email" type="email" id="email" ngModel email name="userEmail">
+        </div>
+
+        <!-- <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div> -->
+
+        <div class="inputDiv">
+            <label class="inputLabel" for="msg">Message</label>
+            <textarea [(ngModel)]="message" id="message" name="userMessage"></textarea>
+        </div>
+        <div id="buttonDiv" class="inputDiv" class="button">
+            <!-- <button type="submit">Send</button> -->
+            <button id="submitButton" type="button" class="btn btn-primary" (click)="onSend()">Send</button>
+            <!-- <button id="submitButton" type="button" (click)="onSend()">Send</button> -->
+        </div>
+    </form>
+</div>
+
+
+

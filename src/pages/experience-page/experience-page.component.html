@@ -1,0 +1,93 @@
+<!-- Navbar -->
+<app-nav-bar></app-nav-bar>
+<div id="experience" style="margin-left: 5%; margin-right: 5%">
+    <div id="job">
+        <ul class="noMargin noPadding" id="jobsList">
+            <li *ngFor="let job of jobs" class="mdPadding">
+                <h1><a [attr.href]="job.payload.doc.data().link">{{ job.payload.doc.data().companyName }}</a> | <i>{{ job.payload.doc.data().title }}</i></h1>
+                <div id="roles">
+                    <ul id="rolesList">
+                        <li *ngFor="let role of job.payload.doc.data().role" [innerHTML]="role">
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- <div id="experience" style="margin-left: 5%; margin-right: 5%">
+    <div id="job">
+        <ul class="noMargin noPadding" id="jobsList">
+            <li *ngFor="let job of jobs" class="mdPadding">
+                <h1><a [attr.href]="job.payload.doc.data().link">{{ job.payload.doc.data().companyName }}</a> |
+                    <i>{{ job.payload.doc.data().title }}</i></h1>
+                <div id="roles">
+                    <ul id="rolesList">
+                        <li *ngFor="let role of jobsList">
+                            {{ role }}
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div> -->
+
+
+
+
+
+<!-- <div id="experience" style="margin-left: 5%; margin-right: 5%">
+  <div id="jobs">
+    <ul class="noMargin noPadding" id="jobsList">
+
+      <li *ngFor="let job of jobs" class="mdPadding">
+        <h1><a [attr.href]="job.link">{{ job.companyName }}</a> | <i>{{ job.title }}</i></h1>
+
+        <div>
+            <ul id="role">
+                <li *ngFor="let role of job.role">
+                    {{ role }}
+                </li>
+            </ul>
+        </div>
+
+
+      </li>
+    </ul>
+  </div>
+</div> -->
+
+
+<!-- TODO: store company info in a database :: DONE -->
+<!-- TODO: can do a call to load that data when this page is loaded :: DONE -->
+<!-- TODO: loop through data with *ngFor or some other (maybe better) way and populate this html page :: DONE -->
+<!-- <div class="horizontalList">
+    <ul class="toolsUsedList">
+        <li>
+            <div class="horizListContainer">
+                <ul>
+                    <li *ngFor="let role of job.role">
+                        <p>{{ role }}</p>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li>
+            <div class="horizListContainer">
+                <ul style="font: 15px" class="">
+                    <li *ngFor="let tool of job.toolsUsed"> -->
+                        <!-- <div *ngIf="tool === 'Firebase'"><i style="font-size: 30px; color: orange;" class="fab fa-js"></i></div> -->
+                        <!-- <div *ngIf="tool === 'Firebase'"><img class="toolIcon" src="../../assets/firebase_logo.png"></div> -->
+                        <!-- <img class="toolIcon" ng-src={{ tool }}> -->
+                        <!-- {{ tool }}
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+    </ul>
+</div> -->

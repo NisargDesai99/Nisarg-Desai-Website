@@ -1,0 +1,31 @@
+<!-- Navbar -->
+<app-nav-bar></app-nav-bar>
+<div style="background-color: transparent; position: relative">
+  <div class="firstContainer">
+    <div class="basicContainer">
+      <h1 id="name">{{ title }}</h1>
+      <div class="basicContainer">
+        <h5>Software Engineer</h5>
+        <div>
+          <ul id="iconsList">
+            <li>
+              <button id="linkedinBtn" class="socialsButton bg-transparent" (click)="linkedinClicked()">
+                  <i class="fab fa-linkedin-in"></i>
+              </button>
+            </li>
+            <li>
+              <button id="githubBtn" class="socialsButton bg-transparent" (click)="githubClicked()">
+                <i class="fab fa-github"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h3 style="padding-top: 30px;"><i class="fas fa-hammer"></i></h3>
+        <h3>Under Construction</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
